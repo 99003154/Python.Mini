@@ -1,4 +1,3 @@
-# Advance Mathematical Functions Calculator
 class cal1:
 
     def __init__(self, p):
@@ -199,7 +198,17 @@ subObj.area_rectangle()
 subObj.peri_rectangle()
 
 
-#Pattern Matching
+#Magic Method
+print (dir())
+print (id(cal1))
+print (id(cal2))
+num=100
+print (num.__add__(500))
+print (num.__floordiv__(5))
+print (num.__sub__(5))
+
+
+
 import re
 
 print(re.match("[a-z 0-9]+@[gmail]+\.[a-z]{3}" , "madhu5@gmail.com"))
