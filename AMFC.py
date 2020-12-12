@@ -9,7 +9,7 @@ class cal1:
         #a is celsius
         #this function comes under temperature conversion
         print("conversion from celsius to kelvin is : %f" % (self.a + 273.15));
-        return self.a + 273.15
+       
     def ftoc(self): 
         #a is fahrenheit
         #this function comes under temperature conversion
