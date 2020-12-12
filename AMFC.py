@@ -1,177 +1,177 @@
 class cal1:
 
-    def __init__(self, a):
-        self.a = a
+    def __init__(self, p):
+        self.p = p
 
     def ctof(self):
-        # a is celsius
+        # p is celsius
         # this function comes under temperature conversion
-        print ('conversion from c to f is : %f' % (self.a*9/5+32))
+        print ('conversion from c to f is : %f' % (self.p*9/5+32))
     # celcius
 
     def ctok(self):
-        # a is celsius
+        # p is celsius
         # this function comes under temperature conversion
-        print ('conversion from celsius to kelvin is : %f' % (self.a+273.15))
+        print ('conversion from celsius to kelvin is : %f' % (self.p+273.15))
 
     def ftoc(self):
 
-        # a is fahrenheit
+        # p is fahrenheit
         # this function comes under temperature conversion
 
         print ('conversion from fahrenheit to celsius is : %f' \
-            % ((self.a - 32) * 5 / 9))
+            % ((self.p - 32) * 5 / 9))
 
     def ftok(self):
 
-        # a is fahrenheit
+        # p is fahrenheit
         # this function comes under temperature conversion
 
-        print ('conversion from ff to k is : %f' % ((self.a-32)*5/9+273.15))
+        print ('conversion from ff to k is : %f' % ((self.p-32)*5/9+273.15))
 
     def ktoc(self):
 
-        # a is kelvin
+        # p is kelvin
         # this function comes under temperature conversion
 
-        print ('conversion from kelvin to celsius is : %f' % (self.a-273.15))
+        print ('conversion from kelvin to celsius is : %f' % (self.p-273.15))
 
     def ktof(self):
 
-        # a is kelvin
+        # p is kelvin
         # this function comes under temperature conversion
 
-        print ('conversion from k to f is : %f' % (self.a-273.15))
+        print ('conversion from k to f is : %f' % (self.p-273.15))
 
     def area_circle(self):
 
-        # a is radius of the circle
+        # p is radius of the circle
         # this operation comes under measurements of different shapes
 
-        print ('area of the circle is : %f' % (3.147 * self.a * self.a))
+        print ('area of the circle is : %f' % (3.147 * self.p * self.p))
 
     def area_square(self):
 
-        # a is side of the square
+        # p is side of the square
         # this operation comes under measurements of different shapes
 
-        print ('area of the square is : %f' % (self.a * self.a))
+        print ('area of the square is : %f' % (self.p * self.p))
 
     def peri_square(self):
 
-        # a is side of the square
+        # p is side of the square
         # this operation comes under measurements of different shapes
 
-        print ('perimeter of the square is : %f' % (4 * self.a))
+        print ('perimeter of the square is : %f' % (4 * self.p))
 
     def peri_circle(self):
 
-        # a is radius of the circle
+        # p is radius of the circle
         # this operation comes under measurements of different shapes
 
-        print ('perimeter of the circle is : %f' % (2 * 3.147 * self.a))
+        print ('perimeter of the circle is : %f' % (2 * 3.147 * self.p))
 
 
 class cal2(cal1):
 
-    def __init__(self, a, b):
-        super().__init__(a)
-        self.b = b
+    def __init__(self, p,q):
+        super().__init__(p)
+        self.q = q
 
     def APY(self):
 
-        # a is stated annual interest
-        # b is number of times compounded
+        # p is stated annual interest
+        # q is number of times compounded
         # this function comes under banking
 
-        print ('APY in Banking is : %f' % ((1+self.a/self.b)**self.b-1))
+        print ('APY in Banking is : %f' % ((1+self.p/self.q)**self.q-1))
 
     def DIR(self):
 
-        # a is monthly debt payment
-        # b is gross monthly income
+        # p is monthly debt payment
+        # q is gross monthly income
         # this function comes under banking
 
-        print ('Debt to Income Ratio in Banking is : %f' % (self.a/self.b))
+        print ('Debt to Income Ratio in Banking is : %f' % (self.p/self.q))
 
     def LV(self):
 
-        # a is loan amount
-        # b is value of collateral
+        # p is loan amount
+        # q is value of collateral
         # this function comes under banking sector
 
-        print ('Loan to Value in Banking is : %f' % (self.a / self.b))
+        print ('Loan to Value in Banking is : %f' % (self.p / self.q))
 
     def NII(self):
 
-        # a is interest income
-        # b is interest expense
+        # p is interest income
+        # q is interest expense
         # this function comes under banking sector
 
-        print (('Net Interest Income in Banking is : %f' % (self.a-self.b)))
+        print (('Net Interest Income in Banking is : %f' % (self.p-self.q)))
 
     def LDR(self):
 
-        # a is loans
-        # b is deposit
+        # p is loans
+        # q is deposit
         # this function comes under banking sector
 
-        print ('Loan to Deposit Ratio is : %f' % (self.a / self.b))
+        print ('Loan to Deposit Ratio is : %f' % (self.p / self.q))
 
     def NIS(self):
 
-        # a is interest income rate
-        # b is interest expense rate
+        # p is interest income rate
+        # q is interest expense rate
         # this function comes under banking sector
 
-        print ('Net Interest Spread in Banking is : %f' % (self.a-self.b))
+        print ('Net Interest Spread in Banking is : %f' % (self.p-self.q))
 
     def NIM(self):
 
-        # a is net interest income
-        # b is avg earning assets
+        # p is net interest income
+        # q is avg earning assets
         # this function comes under banking sector
 
-        print ('Net Interest Margin in Banking is : %f' % (self.a/self.b))
+        print ('Net Interest Margin in Banking is : %f' % (self.p/self.q))
 
     def profit(self):
 
-        # a is selling price of a product
-        # b is cost price of a product
+        # p is selling price of a product
+        # q is cost price of a product
         # this function comes under banking sector
 
-        print ('profit is : %f' % (self.a - self.b))
+        print ('profit is : %f' % (self.p - self.q))
 
     def loss(self):
 
-        # a is cost price of a product
-        # b is selling price of a product
+        # p is cost price of a product
+        # q is selling price of a product
         # this function comes under banking sector
 
-        print ('loss is : %f' % (self.a - self.b))
+        print ('loss is : %f' % (self.p - self.q))
 
     def area_triangle(self):
 
-        # a is height of the triangle
-        # b is base of the triangle
+        # p is height of the triangle
+        # q is base of the triangle
         # this operation comes under measurements of different shapes
 
-        print ('area of the triangle is : %f' % (self.a * self.b / 2))
+        print ('area of the triangle is : %f' % (self.p * self.q / 2))
 
     def area_rectangle(self):
 
-        # a is height of the rectangle
-        # b is width of the rectangle
+        # p is height of the rectangle
+        # q is width of the rectangle
         # this operation comes under measurements of different shapes
 
-        print ('area of the rectangle is : %f' % (self.a * self.b))
+        print ('area of the rectangle is : %f' % (self.p * self.q))
 
     def peri_rectangle(self):
 
-        # a is height of the rectangle
-        # b is width of the rectangle
+        # p is height of the rectangle
+        # q is width of the rectangle
         # this operation comes under measurements of different shapes
-        print ('perimeter of the rectangle is : %f' % (2*(self.a+self.b)))
+        print ('perimeter of the rectangle is : %f' % (2*(self.p+self.q)))
 superObj = cal1(50)
 subObj = cal2(15, 10)
 superObj.ctok()
