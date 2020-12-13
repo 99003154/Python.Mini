@@ -153,27 +153,27 @@ def peri_triangle(a, b, c):
     return a + b + c
 
 
-print 'Select operation:'
-print '1.APY'
-print '2.DIR'
-print '3.profit'
-print '4.loss'
-print '5.CI'
-print '6.SI'
-print '7.ctof'
-print '8.ctok'
-print '9.ftoc'
-print '10.ftok'
-print '11.ktoc'
-print '12.ktoc'
-print '13.area_circle'
-print '14.area_square'
-print '15.peri_square'
-print '16.peri_circle'
-print '17.area_triangle'
-print '18.area_rectangle'
-print '19.peri_triangle'
-print '20.peri_rectangle'
+print ('Select operation:')
+print ('1.APY')
+print ('2.DIR')
+print ('3.profit')
+print ('4.loss')
+print ('5.CI')
+print ('6.SI')
+print ('7.ctof')
+print ('8.ctok')
+print ('9.ftoc')
+print ('10.ftok')
+print ('11.ktoc')
+print ('12.ktoc')
+print ('13.area_circle')
+print ('14.area_square')
+print ('15.peri_square')
+print ('16.peri_circle')
+print ('17.area_triangle')
+print ('18.area_rectangle')
+print ('19.peri_triangle')
+print ('20.peri_rectangle')
 while True:
 
     # Take input from the user
@@ -196,25 +196,25 @@ while True:
     ):
         num1 = float(input('Enter first number: '))
         if choice == '7':
-            print ctof(num1)
+            print (ctof(num1))
         elif choice == '8':
-            print ctok(num1)
+            print (ctok(num1))
         elif choice == '9':
-            print ftoc(num1)
+            print (ftoc(num1))
         elif choice == '10':
-            print ftok(num1)
+            print (ftok(num1))
         elif choice == '11':
-            print ktoc(num1)
+            print (ktoc(num1))
         elif choice == '12':
-            print ktof(num1)
+            print (ktof(num1))
         elif choice == '13':
-            print area_circle(num1)
+            print (area_circle(num1))
         elif choice == '14':
-            print area_square(num1)
+            print (area_square(num1))
         elif choice == '15':
-            print peri_square(num1)
+            print (peri_square(num1))
         elif choice == '16':
-            print peri_circle(num1)
+            print (peri_circle(num1))
         break
     elif choice in (
         '1',
@@ -228,30 +228,30 @@ while True:
         num1 = float(input('Enter first number: '))
         num2 = float(input('Enter second number: '))
         if choice == '1':
-            print APY(num1, num2)
+            print (APY(num1, num2))
         elif choice == '2':
-            print DIR(num1, num2)
+            print (DIR(num1, num2))
         elif choice == '3':
-            print profit(num1, num2)
+            print (profit(num1, num2))
         elif choice == '4':
-            print loss(num1, num2)
+            print (loss(num1, num2))
         elif choice == '17':
-            print area_triangle(num1, num2)
+            print (area_triangle(num1, num2))
         elif choice == '18':
-            print area_rectangle(num1, num2)
+            print (area_rectangle(num1, num2))
         elif choice == '20':
-            print peri_rectangle(num1, num2)
+            print (peri_rectangle(num1, num2))
         break
     elif choice in ('5', '6', '19'):
         num1 = float(input('Enter first number: '))
         num2 = float(input('Enter second number: '))
         num3 = float(input('Enter third number: '))
         if choice == '5':
-            print CI(num1, num2, num3)
+            print (CI(num1, num2, num3))
         elif choice == '6':
-            print SI(num1, num2, num3)
+            print (SI(num1, num2, num3))
         elif choice == '19':
-            print peri_triangle(num1, num2, num3)
+            print (peri_triangle(num1, num2, num3))
         break
     else:
-        print 'Invalid Input'
+        print ('Invalid Input')
