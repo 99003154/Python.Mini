@@ -35,23 +35,23 @@ def SI(p, t, r):
 # c is temperature in celsius
 # f is temperature in fahrenheit
 # k is temperature in kelvin
-def ctof(c1):
-    return c1 * 9 / 5 + 32
+def ctof(c):
+    return c * 9 / 5 + 32
  # This function converts temperature from celsius to kelvin
-def ctok(c2):
-    return c2 + 273.15
+def ctok(c):
+    return c + 273.15
  # This function converts temperature from fahrenheit to celsius
-def ftoc(f1):
+def ftoc(f):
     return (f - 32) * 5 / 9
  # This function converts temperature from fahrenheit to kelvin
-def ftok(f2):
+def ftok(f):
     return (f - 32) * 5 / 9 + 273.15
  # This function converts temperature from kelvin to celsius
-def ktoc(k1):
-    return k1 - 273.15
+def ktoc(k):
+    return k - 273.15
  # This function converts temperature from kelvin to fahrenheit
-def ktof(k2):
-    return k2 - 273.15
+def ktof(k):
+    return k - 273.15
  # Operations related to measurements
  # This function finds area of circle
 # r is radius of the circle
