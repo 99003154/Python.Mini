@@ -1,5 +1,5 @@
-class cal1:
-
+import re
+class cal1: 
     def __init__(self, p):
         self.p = p
 
@@ -19,8 +19,7 @@ class cal1:
         # p is fahrenheit
         # this function comes under temperature conversion
 
-        print ('conversion from fahrenheit to celsius is : %f' \
-            % ((self.p - 32) * 5 / 9))
+        print ('conversion from f to c is : %f' % ((self.p-32)*5/9))
 
     def ftok(self):
 
@@ -196,9 +195,7 @@ subObj.loss()
 subObj.area_triangle()
 subObj.area_rectangle()
 subObj.peri_rectangle()
-
-
-#Magic Method
+# Magic Method
 print (dir())
 print (id(cal1))
 print (id(cal2))
@@ -206,10 +203,4 @@ num=100
 print (num.__add__(500))
 print (num.__floordiv__(5))
 print (num.__sub__(5))
-
-
-
-import re
-
-print(re.match("[a-z 0-9]+@[gmail]+\.[a-z]{3}" , "madhu5@gmail.com"))
-
+print(re.match("[a-z 0-9]+@[gmail]+\.[a-z]{3}","madhu5@gmail.com"))
