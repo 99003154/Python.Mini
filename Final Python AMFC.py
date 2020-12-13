@@ -1,17 +1,27 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 import re
-class cal1: 
+
+
+class cal1:
+
     def __init__(self, p):
         self.p = p
 
     def ctof(self):
+
         # p is celsius
         # this function comes under temperature conversion
-        print ('conversion from c to f is : %f' % (self.p*9/5+32))
+
+        print ('conversion from c to f is : %f' % (self.p * 9 / 5 + 32))
+
     # celcius
 
     def ctok(self):
+
         # p is celsius
         # this function comes under temperature conversion
+
         print ('conversion from celsius to kelvin is : %f' % (self.p+273.15))
 
     def ftoc(self):
@@ -19,14 +29,14 @@ class cal1:
         # p is fahrenheit
         # this function comes under temperature conversion
 
-        print ('conversion from f to c is : %f' % ((self.p-32)*5/9))
+        print ('conversion from f to c is : %f' % ((self.p - 32) * 5 / 9))
 
     def ftok(self):
 
         # p is fahrenheit
         # this function comes under temperature conversion
 
-        print ('conversion from ff to k is : %f' % ((self.p-32)*5/9+273.15))
+        print ('conversion from ff to k is : %f' % ((self.p - 32)*5/9+273.15))
 
     def ktoc(self):
 
@@ -40,7 +50,7 @@ class cal1:
         # p is kelvin
         # this function comes under temperature conversion
 
-        print ('conversion from k to f is : %f' % (self.p-273.15))
+        print ('conversion from k to f is : %f' % (self.p - 273.15))
 
     def area_circle(self):
 
@@ -73,7 +83,7 @@ class cal1:
 
 class cal2(cal1):
 
-    def __init__(self, p,q):
+    def __init__(self, p, q):
         super().__init__(p)
         self.q = q
 
@@ -83,7 +93,7 @@ class cal2(cal1):
         # q is number of times compounded
         # this function comes under banking
 
-        print ('APY in Banking is : %f' % ((1+self.p/self.q)**self.q-1))
+        print ('APY in Banking is : %f' % ((1 + self.p / self.q)**self.q - 1))
 
     def DIR(self):
 
@@ -107,7 +117,7 @@ class cal2(cal1):
         # q is interest expense
         # this function comes under banking sector
 
-        print (('Net Interest Income in Banking is : %f' % (self.p-self.q)))
+        print ('Net Interest Income in Banking is : %f' % (self.p-self.q))
 
     def LDR(self):
 
@@ -170,7 +180,10 @@ class cal2(cal1):
         # p is height of the rectangle
         # q is width of the rectangle
         # this operation comes under measurements of different shapes
-        print ('perimeter of the rectangle is : %f' % (2*(self.p+self.q)))
+
+        print ('perimeter of the rectangle is : %f' % (2 * (self.p+self.q)))
+
+
 superObj = cal1(50)
 subObj = cal2(15, 10)
 superObj.ctok()
@@ -195,12 +208,14 @@ subObj.loss()
 subObj.area_triangle()
 subObj.area_rectangle()
 subObj.peri_rectangle()
+
 # Magic Method
+
 print (dir())
 print (id(cal1))
 print (id(cal2))
-num=100
+num = 100
 print (num.__add__(500))
 print (num.__floordiv__(5))
 print (num.__sub__(5))
-print(re.match("[a-z 0-9]+@[gmail]+\.[a-z]{3}","madhu5@gmail.com"))
+print (re.match("[a-z 0-9]+@[gmail]+\.[a-z]{3}", 'madhu5@gmail.com'))
