@@ -5,57 +5,12 @@
 # This function finds the Annual Percentage Yield
 # r is stated annual interest rate
 # n is number of times compounded
-
-
-def APY(r, n):
-    return 1 + r / n ^ n - 1
-
-
-# This function gives Debt to Income Ratio
-# m is Monthly debt payments
-# g is gross monthly income
-
-def DIR(m, g):
-    return m / g
-
-
-# This function finds the profit
-# s is selling price
-# c is cost price
-
-def profit(s, c):
-    return s - c
-
-
 # This function finds the loss
+
 
 def loss(s, c):
     return c - s
 
-
-# This function finds the compound interest
-# p is principal amount
-# r is rate per period
-# n is number of periods
-
-def CI(p, r, n):
-    return (p(1 + r) ^ n) - 1
-
-
-# This function finds the simple interest
-# p is principal amount
-# r is rate per period
-# t is time
-
-def SI(p, t, r):
-    return p * t * r / 100
-
-
-# Temperature Conversions
-# This function converts temperature from celsius to fahrenheit
-# c is temperature in celsius
-# f is temperature in fahrenheit
-# k is temperature in kelvin
 
 def ctof(c):
     return c * 9 / 5 + 32
@@ -154,12 +109,7 @@ def peri_triangle(a, b, c):
 
 
 print ('Select operation:')
-print ('1.APY')
-print ('2.DIR')
-print ('3.profit')
 print ('4.loss')
-print ('5.CI')
-print ('6.SI')
 print ('7.ctof')
 print ('8.ctok')
 print ('9.ftoc')
@@ -217,9 +167,6 @@ while True:
             print (peri_circle(num1))
         break
     elif choice in (
-        '1',
-        '2',
-        '3',
         '4',
         '17',
         '18',
@@ -227,13 +174,7 @@ while True:
          ):
         num1 = float(input('Enter first number: '))
         num2 = float(input('Enter second number: '))
-        if choice == '1':
-            print (APY(num1, num2))
-        elif choice == '2':
-            print (DIR(num1, num2))
-        elif choice == '3':
-            print (profit(num1, num2))
-        elif choice == '4':
+        if choice == '4':
             print (loss(num1, num2))
         elif choice == '17':
             print (area_triangle(num1, num2))
@@ -242,15 +183,11 @@ while True:
         elif choice == '20':
             print (peri_rectangle(num1, num2))
         break
-    elif choice in ('5', '6', '19'):
+    elif choice in ('19'):
         num1 = float(input('Enter first number: '))
         num2 = float(input('Enter second number: '))
         num3 = float(input('Enter third number: '))
-        if choice == '5':
-            print (CI(num1, num2, num3))
-        elif choice == '6':
-            print (SI(num1, num2, num3))
-        elif choice == '19':
+        if choice == '19':
             print (peri_triangle(num1, num2, num3))
         break
     else:
